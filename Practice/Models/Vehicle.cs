@@ -9,9 +9,9 @@ namespace Practice.Models
         public abstract double DriveTime { get; set; }
         public abstract double DrivePath { get; set; }
 
-
-        public abstract double AverageSpeed();
-
-        public abstract void ShowInfo();
+        public double AverageSpeed()
+        {
+            return Math.Round(DrivePath / DriveTime, 2);
+        }
     }
 }

@@ -11,9 +11,6 @@ namespace Practice.Interface
         public double CurrentOil { get; set; }
         public string FuelType { get; set; }
 
-        public double LeftFuelAmount()
-        {
-            return TankSize - CurrentOil;
-        }
+        public double LeftOilAmount();
     }
 }
